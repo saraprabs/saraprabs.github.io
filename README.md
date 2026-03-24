@@ -1,5 +1,5 @@
 # Saranya Prabhu | Personal Portfolio ⚡️ 
- A clean, minimalist and fully responsive portfolio website built to showcase my journey as a developer/tester. This site features my professional summary, technical skills, projects, education, experience and contact information.
+ A clean, minimalist and fully responsive portfolio website built to showcase my journey as a developer and tester. This site features my professional summary, technical skills, projects, education, experience and contact information.
 
 [Live Demo](https://saraprabs.github.io)
 
