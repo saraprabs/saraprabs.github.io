@@ -31,7 +31,7 @@
 └── README.md           # Project documentation
 ```
 ## 📸 Preview
-[!TIP]
+
 ![Portfolio Preview](images/Screenshot192420.png)
 This portfolio uses a "Single Page Application" approach where clicking the sidebar links updates the #main-view area dynamically!
 
