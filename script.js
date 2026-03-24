@@ -4,7 +4,7 @@ const contentData = {
                     <h3>Software Engineer | Python Developer | ML/AI Engineer | Automation Test Engineer</h3>
                     <br>
                     <p>Self-driven, quick starter, passionate programmer with curious mind
-                    who enjoys solving a complex and challenging real-world problems.</p>
+                    who enjoys solving complex and challenging real-world problems.</p>
                     <p>
                     AI/ML Engineer focused on building robust infrastructure and automated workflows for machine learning. 
                     Expert in MLOps practices, including CI/CD for ML, model monitoring, and hands-on expertise in pandas, scikit-learn, 
