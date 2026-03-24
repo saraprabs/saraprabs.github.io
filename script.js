@@ -11,6 +11,10 @@ const contentData = {
                     tensorflow and matplotlib. Highly skilled in optimizing specific models, e.g., LLMs or CNNs for high-throughput production 
                     environments and ensuring seamless model lifecycle management. 
                     </p>
+                    <p>Passionate Software Developer dedicated to creating seamless user experiences. Having started my journey in Software Testing, 
+                    I bring a 'test-first' mindset to every line of code I write. I specialize in building responsive, scalable web applications where 
+                    performance and bug-free logic are the top priorities.
+                    </p>
                     <div class="social-icons">
                     <a href="https://www.linkedin.com/in/saranya-prabhu-9066404a/" target="_blank">
                         <img src="logos/linkedin.png" alt="LinkedIn">
@@ -34,6 +38,10 @@ const contentData = {
                         and executing test cases, maintaining test logs, and managing defect reports. Demonstrated ability to collaborate 
                         with cross-functional teams to ensure software quality and deliver reliable, bug-free products. Eager to leverage 
                         both manual and automated testing skills in dynamic software development environments.
+                        </p>
+                        <p>Hybrid Professional: Having started my journey in Software Testing, I bring a 'test-first' mindset to every line 
+                        of code I write. I don’t just build features; I build them to be resilient. With experience in both developing clean code 
+                        and architecting rigorous test suites, I bridge the gap between rapid deployment and rock-solid stability. 
                         </p>`,
     projects: `<h1>Projects</h1>
     <div><h1>Machine Learning and Django Project</h1>
