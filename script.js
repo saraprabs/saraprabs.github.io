@@ -49,7 +49,7 @@ const contentData = {
                     </a>
                     </div> 
     <div><h1>Deep Learning- Object Detection Using YOLO</h1>
-    <p>a custom Deep Learning-based Object Detection System trained to identify and localize three everyday objects: Red Cups, Blue Bottles, and Mobile Phones.
+    <p>A custom Deep Learning-based Object Detection System trained to identify and localize three everyday objects: Red Cups, Blue Bottles, and Mobile Phones.
 
 The system utilizes the YOLO (You Only Look Once) architecture, specifically optimized for real-time inference on edge devices and standard CPUs. By training on 
 a custom-curated dataset, the model achieves high precision in varied indoor environments, making it suitable for IoT integration, inventory tracking, or smart 

@@ -34,7 +34,7 @@ body {
 .profile-img {
     top: 20px;
     right: 20px;
-    position: relative;    
+    position: static;    
     width: 120px;
     height: 120px;
     border-radius: 50%; /* Makes it circular */
@@ -104,10 +104,11 @@ h1 {
     color: #3498db;
 }
 
-/* Ensure the Home link looks active/clickable */
-.nav-links a:first-child {
+/* highlights the active links */
+.nav-links a.active {
     font-weight: 700;
     color: #3498db;
+    background: #2f3542; /* Optional: adds a background to the active link */
 }
 .social-icons a {
     display: inline-block;
