@@ -5,6 +5,12 @@ const contentData = {
                     <br>
                     <p>Self-driven, quick starter, passionate programmer with curious mind
                     who enjoys solving a complex and challenging real-world problems.</p>
+                    <p>
+                    AI/ML Engineer focused on building robust infrastructure and automated workflows for machine learning. 
+                    Expert in MLOps practices, including CI/CD for ML, model monitoring, and hands-on expertise in pandas, scikit-learn, 
+                    tensorflow and matplotlib. Highly skilled in optimizing specific models, e.g., LLMs or CNNs for high-throughput production 
+                    environments and ensuring seamless model lifecycle management. 
+                    </p>
                     <div class="social-icons">
                     <a href="https://www.linkedin.com/in/saranya-prabhu-9066404a/" target="_blank">
                         <img src="logos/linkedin.png" alt="LinkedIn">
@@ -23,8 +29,12 @@ const contentData = {
                          Currently, I leverage my expertise in Python to build scalable web applications using Django and integrate 
                          Machine Learning models to drive data-driven decision making. I am passionate about bridging the gap between 
                          complex backend architecture and intelligent predictive analytics to solve real-world buisness challenges.
-
-                    </p>`,
+                        </p>
+                        <p>Detail-oriented and proactive QA professional with hands-on experience in manual testing, including designing 
+                        and executing test cases, maintaining test logs, and managing defect reports. Demonstrated ability to collaborate 
+                        with cross-functional teams to ensure software quality and deliver reliable, bug-free products. Eager to leverage 
+                        both manual and automated testing skills in dynamic software development environments.
+                        </p>`,
     projects: `<h1>Projects</h1>
     <div><h1>Machine Learning and Django Project</h1>
     <p>Machine learning and DJango project that uses ML trained model to predict survival of passengers in historical TITANIC Dataset. 
