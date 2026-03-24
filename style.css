@@ -1,5 +1,10 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; color: #333; }
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.7; /* Adds space between lines for readability */
+    color: #2d3436;
+    background-color: #f9f9fb;
+}
 
 .layout { display: flex; min-height: 100vh; }
 
@@ -23,6 +28,9 @@ body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; color: #333; }
     width: 100%;
 }
 .profile-img {
+    top:20 px;
+    right:20 px;
+    position: relative;    
     width: 120px;
     height: 120px;
     border-radius: 50%; /* Makes it circular */
@@ -67,4 +75,66 @@ body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; color: #333; }
 }
 
 
-#main-view { margin-top: 40px; line-height: 1.6; }
+#main-view { margin-top: 40px; line-height: 1.6;
+transition: opacity 0.3s ease-in-out; }
+/* Paragraph Specific Styling */
+#main-view p {
+    font-size: 1.15rem; /* Larger, modern size */
+    color: #4a4a4a;     /* Slightly softer than pure black */
+    margin-bottom: 1.5rem;
+    max-width: 800px;   /* Prevents lines from getting too long to read */
+    letter-spacing: -0.01em; /* Tighter, professional spacing */
+}
+/* Page Titles */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1e272e;
+}
+/* Accent for Quote/Summary (Optional) */
+.special-text {
+    font-family: 'Lora', serif; /* A beautiful serif for a sophisticated look */
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #3498db;
+}
+
+/* Ensure the Home link looks active/clickable */
+.nav-links a:first-child {
+    font-weight: 700;
+    color: #3498db;
+}
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Makes the icon pop out slightly when hovered */
+}
+
+.social-icons img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+}
+
+/* Target all lists inside the main content area */
+#main-view ul {
+    margin-left: 80px; /* Equivalent to two large tabs */
+    list-style-type: disc; /* Keeps the professional bullet points */
+    margin-bottom: 40px;
+}
+#main-view li {
+    font-size: 1.2rem;
+    margin-bottom: 10px; /* Space between items */
+    line-height: 1.4;
+    
+}
+
+#main-view h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
