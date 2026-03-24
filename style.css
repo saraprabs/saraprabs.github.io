@@ -1,0 +1,30 @@
+:root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --accent: #007bff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    transition: 0.3s;
+}
+
+nav { display: flex; justify-content: space-between; padding: 2rem; }
+header { text-align: center; padding: 5rem 1rem; }
+.highlight { color: var(--accent); }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
