@@ -7,26 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">DevName</div>
-        <button id="theme-toggle">🌙</button>
-    </nav>
 
-    <header>
-        <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-        <p>Full Stack Developer | Python Enthusiast | Problem Solver</p>
-    </header>
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="nav-links">
+                <a href="#" onclick="showContent('summary')">Home</a>
+                <a href="#" onclick="showContent('about')">About</a>
+                <a href="#" onclick="showContent('projects')">Projects</a>
+                <a href="#" onclick="showContent('skills')">Skills</a>
+                <a href="#" onclick="showContent('education')">Education</a>
+                <a href="#" onclick="showContent('experience')">Experience</a>
+                <a href="#" onclick="showContent('contact')">Contact</a>
+            </div>
+        </nav>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Project One</h3>
-                <p>Built with Python and Flask. A cool data app.</p>
-                <a href="#">View Code</a>
+        <main class="content">
+            <img src="your-photo.jpg" alt="Portfolio" class="profile-img" onclick="showContent('summary')">
+            
+            <div id="main-view">
+                <section id="summary">
+                    <h1>Welcome.</h1>
+                    <p>I am a developer specializing in Python and Web Technologies. Explore my work using the sidebar.</p>
+                </section>
             </div>
-            </div>
-    </section>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
