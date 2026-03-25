@@ -20,7 +20,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.SYNC_TOKEN }}
         with:
           source_file: 'README.md'
-          destination_repo: 'saraprabs/saraprabs' # Replace with your repo
+          destination_repo: 'saraprabs/saraprabs.github.io' # Replace with your repo
           destination_folder: '/'
           user_email: 'vsaranya04@gmail.com'
           user_name: 'saraprabs'
