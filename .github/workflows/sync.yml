@@ -1,0 +1,27 @@
+name: Sync README to Profile
+
+on:
+  push:
+    branches:
+      - main  # or master
+    paths:
+      - 'README.md'
+
+jobs:
+  copy-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Portfolio Repo
+        uses: actions/checkout@v4
+
+      - name: Pushes README to Profile Repo
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.SYNC_TOKEN }}
+        with:
+          source_file: 'README.md'
+          destination_repo: 'your-username/your-username' # Replace with your repo
+          destination_folder: '/'
+          user_email: 'your-email@example.com'
+          user_name: 'your-username'
+          commit_message: 'Syncing README from Portfolio'
