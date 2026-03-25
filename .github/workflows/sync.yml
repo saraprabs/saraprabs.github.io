@@ -20,8 +20,8 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.SYNC_TOKEN }}
         with:
           source_file: 'README.md'
-          destination_repo: 'your-username/your-username' # Replace with your repo
+          destination_repo: 'saraprabs/saraprabs' # Replace with your repo
           destination_folder: '/'
-          user_email: 'your-email@example.com'
-          user_name: 'your-username'
+          user_email: 'vsaranya04@gmail.com'
+          user_name: 'saraprabs'
           commit_message: 'Syncing README from Portfolio'
