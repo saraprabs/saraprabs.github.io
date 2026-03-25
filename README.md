@@ -35,4 +35,4 @@
 ![Portfolio Preview](images/Screenshot192420.png)
 This portfolio uses a "Single Page Application" approach where clicking the sidebar links updates the #main-view area dynamically!
 
-#### Built with ❤️ by Saranya Prabhu
+### Built with ❤️ by Saranya Prabhu
