@@ -6,10 +6,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Upload to Azure
-      uses: azure/CLI@v1
+      uses: azure/CLI@v2
       with:
         azcliversion: latest
         inlineScript: |
-           az storage blob upload-batch --account-name <youraccountname> -d '$web' -s .
+           az storage blob upload-batch \
+            --account-name <sarastorageaccount2026> \
+            --connection-string "${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}" \
+            --destination '$web' \
+            --source . \
+            --overwrite true 
