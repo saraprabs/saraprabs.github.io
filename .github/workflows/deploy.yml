@@ -1,29 +1,40 @@
 name: Deploy Portfolio
+
 on:
   push:
     branches: [ main ]
-# This fixes the Node.js 24 deprecation warning
+
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Upload to Azure
-      uses: azure/CLI@v2
-      with:
-        azcliversion: latest
-        inlineScript: |
-           # Validate connection string exists
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Upload to Azure
+        uses: azure/CLI@v2
+        with:
+          azcliversion: latest
+          inlineScript: |
+            # 1. Verify the connection string exists
             if [ -z "${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}" ]; then
-              echo "Error: AZURE_STORAGE_CONNECTION_STRING is missing in GitHub Secrets!"
+              echo "ERROR: AZURE_STORAGE_CONNECTION_STRING is not set in GitHub Secrets."
               exit 1
             fi
-           az storage blob upload-batch \
-            --account-name sarastorageaccount2026 \
-            --connection-string "${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}" \
-            --destination '$web' \
-            --source . \
-            --overwrite true \
-            --no-progress false 
+
+            # 2. Check if index.html exists in the current folder
+            if [ ! -f "index.html" ]; then
+              echo "WARNING: index.html not found in root. Checking subdirectories..."
+              ls -R
+            fi
+
+            # 3. Upload command with escaped container name
+            az storage blob upload-batch \
+              --account-name <youraccountname> \
+              --connection-string "${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}" \
+              --destination '$web' \
+              --source . \
+              --overwrite true
