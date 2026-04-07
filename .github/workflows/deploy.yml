@@ -12,9 +12,13 @@ jobs:
       with:
         azcliversion: latest
         inlineScript: |
+           # This 'ls' command helps you see where you are in the logs
+           echo "Listing files in current directory:"
+           ls -R
            az storage blob upload-batch \
             --account-name sarastorageaccount2026 \
             --connection-string "${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}" \
             --destination '$web' \
             --source . \
-            --overwrite true 
+            --overwrite true \
+            --no-progress false 
