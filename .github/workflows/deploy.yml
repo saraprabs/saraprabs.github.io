@@ -2,6 +2,9 @@ name: Deploy Portfolio
 on:
   push:
     branches: [ main ]
+# This fixes the Node.js 24 deprecation warning
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,9 +15,11 @@ jobs:
       with:
         azcliversion: latest
         inlineScript: |
-           # This 'ls' command helps you see where you are in the logs
-           echo "Listing files in current directory:"
-           ls -R
+           # Validate connection string exists
+            if [ -z "${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}" ]; then
+              echo "Error: AZURE_STORAGE_CONNECTION_STRING is missing in GitHub Secrets!"
+              exit 1
+            fi
            az storage blob upload-batch \
             --account-name sarastorageaccount2026 \
             --connection-string "${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}" \
