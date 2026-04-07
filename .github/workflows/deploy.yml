@@ -13,7 +13,7 @@ jobs:
         azcliversion: latest
         inlineScript: |
            az storage blob upload-batch \
-            --account-name <sarastorageaccount2026> \
+            --account-name sarastorageaccount2026 \
             --connection-string "${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}" \
             --destination '$web' \
             --source . \
