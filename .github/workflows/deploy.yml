@@ -1,0 +1,15 @@
+name: Deploy Portfolio
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Upload to Azure
+      uses: azure/CLI@v1
+      with:
+        azcliversion: latest
+        inlineScript: |
+           az storage blob upload-batch --account-name <youraccountname> -d '$web' -s .
