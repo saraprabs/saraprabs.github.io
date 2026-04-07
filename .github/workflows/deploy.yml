@@ -33,7 +33,7 @@ jobs:
 
             # 3. Upload command with escaped container name
             az storage blob upload-batch \
-              --account-name <youraccountname> \
+              --account-name sarastorageaccount2026 \
               --connection-string "${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}" \
               --destination '$web' \
               --source . \
