@@ -21,7 +21,7 @@ function showContent(section) {
        }, 150);
 }
 // CRITICAL: Attach it to window so HTML onclicks work
-//window.showContent = showContent;
+window.showContent = showContent;
 // THIS IS THE KEY: Load the index (summary) content as soon as the page opens
 window.onload = () => {
     showContent('summary');
