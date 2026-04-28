@@ -136,9 +136,15 @@ h1 {
     line-height: 1.4;
     
 }
+#main-view h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #333; /* Or your primary theme color */
+}
 
 #main-view h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 30px;
     margin-bottom: 15px;
     font-weight: 600;
@@ -171,4 +177,9 @@ h1 {
     .nav-links a {
         padding: 10px 15px; /* Smaller padding for mobile fingers */
     }
+}
+
+#main-view {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1; /* Start visible */
 }
