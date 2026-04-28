@@ -133,9 +133,9 @@ export const contentData = {
                 <p>Masters in Software Engineering (2004-2009)
                 <br><i><small>Vellore Institute of technology, Vellore, India.</i></small> </p>
                 <h2>Courses and Study Programmes </h2>
-                <p>Python and AI (Dec 2025 - May 2026)
+                <p>Python and AI (Dec 2025 - May 2026) Full-time
                 <br><i><small>Lexicon utbildning by arbetsförmedlingen</i></small> </p>
-                <p>Python Test Automation (Dec 2025 - May 2026)
+                <p>Python Test Automation (Dec 2025 - May 2026) Part-time
                 <br><i><small>NBI / HandelsAkademin</i></small> </p>
                 <h2>Certifications </h2>
                 <p>ISTQB Certification ctfl4.0
