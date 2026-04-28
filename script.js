@@ -1,4 +1,4 @@
-
+import { contentData } from './content.js';
 
 function showContent(section) {
     const mainView = document.getElementById('main-view');
