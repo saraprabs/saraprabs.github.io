@@ -1,4 +1,4 @@
-const contentData = {
+export const contentData = {
     summary: `<section id="summary">
                     <h1>Hi, I am Saranya Prabhu</h1>
                     <h3>Software Engineer | Python Developer | ML/AI Engineer | Automation Test Engineer</h3>
