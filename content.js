@@ -93,8 +93,10 @@ export const contentData = {
                 <li>Python</li>
                 <li>C#</li>
                 <li>MySQL</li>
+                <li>CosmosDB</li>
                 <li>HTML</li>
                 <li>CSS</li>
+                <li>Javascript</li>
                 </ul>
                 <h2>Libraries</h2>
                 <ul>
@@ -104,6 +106,9 @@ export const contentData = {
                 <li>OpenCV</li>
                 <li>Scikit-learn</li>
                 <li>matplot-lib</li>
+                <li>Playwright</li>
+                <li>Pytest</li>
+                <li>Selenium</li>
                 </ul>
                 <h2>Frameworks</h2>
                 <ul>
@@ -112,10 +117,15 @@ export const contentData = {
                 <li>TensorFlow</li>
                 <li>PyTorch</li>
                 </ul>
+                <h2>Cloud & Version control</h2>
+                <ul>
+                <li>Azure</li>
+                <li>GitHub</li>
+                </ul>
                 <h2>Others</h2>
                 <ul>
-                <li>GitHub</li>
-                <li>AWS</li>
+                <li>Agile</li>
+                <li>CI/CD</li>
                 </ul>
                 `,
     education: `<h1>Education</h1>
@@ -125,6 +135,8 @@ export const contentData = {
                 <h2>Courses and Study Programmes </h2>
                 <p>Python and AI (Dec 2025 - May 2026)
                 <br><i><small>Lexicon utbildning by arbetsförmedlingen</i></small> </p>
+                <p>Python Test Automation (Dec 2025 - May 2026)
+                <br><i><small>NBI / HandelsAkademin</i></small> </p>
                 <h2>Certifications </h2>
                 <p>ISTQB Certification ctfl4.0
                 <br><i><small>Swedish Software Testing Board, 2025</i></small> </p>
