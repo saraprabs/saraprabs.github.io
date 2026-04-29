@@ -45,6 +45,21 @@ export const contentData = {
                         </p>`,
     projects: `<h1>Projects</h1>
                 <div>
+                <h1>Agentic AI Project - A Stateful Multi-Agent Web App builder using LangGraph</h1>
+                <p>A multi-agent system designed to transform high-level user requirements into fully functional web applications. 
+                    By utilizing a structured pipeline of specialized AI agents, the system automates the entire software development lifecycle 
+                    (SDLC)—from initial planning and technical architecture to final code execution.
+                </p>
+                <h2>Techstack</h2>
+                <p> Python, LLM: llama-3.3-70b-versatile (via Groq), Orchestration: LangGraph 1.1.3, Schema Validation: Pydantic 2.12.5, Networking: httpx & groq-sdk </p>
+                </div>
+                <div class="social-icons">
+                                <a href="https://github.com/saraprabs/Langgraph-Lovable-clone" target="_blank">
+                                    <img src="logos/github.png" alt="GitHub">
+                                </a>
+                                </div> 
+                <div>
+                <div>
                 <h1>RAG based Enterprise Knowledge Assistant Chatbot</h1>
                 <p>FinSolve RAG (Retrieval-Augmented Generation) Chatbot, a secure, department-aware assistant 
                 designed to provide internal knowledge while enforcing strict Role-Based Access Control (RBAC) using LLM.
