@@ -59,7 +59,6 @@ export const contentData = {
                                 </a>
                                 </div> 
                 <div>
-                <div>
                 <h1>RAG based Enterprise Knowledge Assistant Chatbot</h1>
                 <p>FinSolve RAG (Retrieval-Augmented Generation) Chatbot, a secure, department-aware assistant 
                 designed to provide internal knowledge while enforcing strict Role-Based Access Control (RBAC) using LLM.
@@ -72,7 +71,6 @@ export const contentData = {
                                     <img src="logos/github.png" alt="GitHub">
                                 </a>
                                 </div> 
-                <div>
                 <div>
                 <h1>Machine Learning and Django Project</h1>
                 <p>Machine learning and DJango project that uses ML trained model to predict survival of passengers in historical TITANIC Dataset. 
@@ -101,6 +99,21 @@ export const contentData = {
                         <img src="logos/github.png" alt="GitHub">
                     </a>
                     </div>
+                <div>
+                <h1>Django REST Blog API (Azure Cosmos DB)</h1>
+                <p>Django REST Framework API utilizing the Azure Cosmos DB Python SDK for NoSQL storage. Demonstrates cloud-native 
+                Python development, seamless integration with Azure App Service, and scalable NoSQL data modeling. Deployed to Azure 
+                App Service via GitHub Actions/Azure CLI. Includes full CRUD operations and production-ready environment configuration.
+                </p>
+                <h2>Techstack</h2>
+                <p> Python, Django, DjangoRest Framework, Cosmos DB(No SQL), gunicorn, django-cors-headers </p>
+                </div>
+                <div class="social-icons">
+                                <a href="https://github.com/saraprabs/Django_Blog_API" target="_blank">
+                                    <img src="logos/github.png" alt="GitHub">
+                                </a>
+                                </div> 
+                <div>
                     `,
     skills: `<h1>Skills</h1>
                 <h2>Languages and Databases</h2>
